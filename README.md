@@ -41,6 +41,29 @@ mc-mods-modpack-v0.1.0.zip
 
 ## Cómo instalar (cliente)
 
+### Vía script automático (recomendado)
+
+```bash
+curl -fsSL -o /tmp/install.sh \
+  https://raw.githubusercontent.com/louzt/mc-mods-modpack/main/install.sh
+bash /tmp/install.sh
+```
+
+El script:
+- Descarga el .zip desde el mirror VPS (fallback a GitHub Release).
+- Verifica SHA256.
+- Extrae los 5 mods a `~/.minecraft/mods/`.
+- Crea perfil launcher (Mojang launcher).
+- Agrega server entry en `servers.dat`.
+
+Diagnóstico sin instalar:
+
+```bash
+bash /tmp/install.sh --check
+```
+
+### Vía manual
+
 Ver [`INSTALL.md`](./INSTALL.md) para instrucciones detalladas Linux vs Windows.
 
 Resumen rápido:
@@ -55,12 +78,14 @@ Resumen rápido:
 ## Conexión al server
 
 Una vez que tengas Fabric Loader + los mods instalados:
-
-1. Abre Minecraft con el perfil **fabric-loader-0.17.4-1.21.4**.
+1. Abre Minecraft con el perfil **Fabric 1.21.4**.
 2. Multijugador → Agregar server:
    - Dirección: `mods.minecr4ft.loust.pro`
    - Puerto: `25566`
 3. Conecta. El primer jugador que entra despierta el server (cold-start ~60-90s).
+
+> El server usa `online-mode=false`. Cualquier username es aceptado mientras
+> esté en la whitelist del operador.
 
 ## Licencia
 
