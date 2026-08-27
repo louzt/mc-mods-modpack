@@ -1,0 +1,14 @@
+# Licenses of bundled mods
+
+This modpack is a redistribution of open-source Fabric mods. Each mod retains
+its original license.
+
+| Mod | License | Author | Source |
+|---|---|---|---|
+| Fabric API | Apache-2.0 | FabricMC | https://github.com/FabricMC/fabric |
+| Lithium | MIT | JellySquid | https://github.com/CaffeineMC/lithium-fabric |
+| Cloth Config | Apache-2.0 | shedaniel | https://github.com/shedaniel/cloth-config |
+| Simple Voice Chat | MIT | henkelmax | https://github.com/henkelmax/simple-voice-chat |
+| BlueMap | MIT | BlueMap contributors | https://github.com/BlueMap-Minecraft/BlueMap |
+
+The `mc-mods-modpack` wrapper repo itself is licensed under MIT.
